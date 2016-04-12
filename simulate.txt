@@ -1,0 +1,257 @@
+ISim log file
+Running: C:\Users\ladyo\Documents\Xilinx\exam1\exam1_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/ladyo/Documents/Xilinx/exam1/exam1_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+onerror resume
+wave add /
+run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+isim force add /exam1/clk 1 -radix bin -value 0 -radix bin -time 8 ns -repeat 16 ns
+isim force add /exam1/vgaclk 1 -radix bin -value 0 -radix bin -time 20 ns -repeat 40 ns
+run 40ns
+at 1 us, Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 1 us, Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+isim force add /exam1/reset_h 1 -radix bin
+run 80ns
+isim force add /exam1/reset_h 0 -radix bin
+run 40ns
+isim force add /exam1/rxf_l 0 -radix bin
+run 80ns
+run 80ns
+at 1248 ns, Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1248 ns, Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1256 ns(1): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/exam1/RAM/U0/native_mem_module/mem_module/).
+at 1256 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1256 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1256 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+run 16000ns
+isim force add /exam1/d 11001100 -radix bin
+run 16000ns
+run 16000000ns
+at 257040 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0010100110101110, B read address: 0010100110101110
+
+at 2211600 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0110011111001110, B read address: 0110011111001110
+
+at 9993360 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0101101001011110, B read address: 0101101001011110
+
+at 11936400 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1001011010011110, B read address: 1001011010011110
+
+at 13890960 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1101010010111110, B read address: 1101010010111110
+
+at 15834 us(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0001000011111110, B read address: 0001000011111110
+
+# run 16000ns
+# isim force add /exam1/d 111111 -radix bin
+# run 16000ns
+# run 16000ns
+# isim force add /exam1/d 11111111 -radix bin
+# run 40ns
+# run 160000ns
+# isim force add /exam1/clk 1 -radix bin -value 0 -radix bin -time 8 ns -repeat 16 ns
+# isim force add /exam1/vgaclk 1 -radix bin -value 0 -radix bin -time 20 ns -repeat 40 ns
+# run 16000ns
+# restart
+# isim force add /exam1/clk 1 -radix bin -value 0 -radix bin -time 8 ns -repeat 16 ns
+# isim force add /exam1/vgaclk 1 -radix bin -value 0 -radix bin -time 20 ns -repeat 40 ns
+# run 40ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 16000ns
+# run 16000000ns
+# isim force add /exam1/rxf_l 0 -radix bin
+# run 16000000ns
+at 16016120 ns, Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 16016120 ns, Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 16016120 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 16016120 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 16016128 ns(1): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/exam1/RAM/U0/native_mem_module/mem_module/).
+at 16016128 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 16016128 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 16016128 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 17507240 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0011100011011110, B read address: 0011100011011110
+
+at 21391400 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1011000100001110, B read address: 1011000100001110
+
+at 25289 us(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0010101101101110, B read address: 0010101101101110
+
+at 27232040 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0110011110101110, B read address: 0110011110101110
+
+at 29186600 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1010010111001110, B read address: 1010010111001110
+
+# isim force add /exam1/d 11111111 -radix bin
+# run 160000000ns
+at 34925480 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0100101111011110, B read address: 0100101111011110
+
+at 38809640 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1100010000001110, B read address: 1100010000001110
+
+at 42707240 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0011111001101110, B read address: 0011111001101110
+
+at 46604840 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1011100011001110, B read address: 1011100011001110
+
+at 50400680 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0010001010011110, B read address: 0010001010011110
+
+at 52343720 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0101111011011110, B read address: 0101111011011110
+
+at 58182440 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0001010100101110, B read address: 0001010100101110
+
+at 60125480 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0101000101101110, B read address: 0101000101101110
+
+at 64023080 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1100101111001110, B read address: 1100101111001110
+
+at 67818920 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0011010110011110, B read address: 0011010110011110
+
+at 71716520 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1010111111111110, B read address: 1010111111111110
+
+at 75600680 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0010100000101110, B read address: 0010100000101110
+
+at 79498280 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1010001010001110, B read address: 1010001010001110
+
+at 83395880 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0001110011101110, B read address: 0001110011101110
+
+at 85237160 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0100100010011110, B read address: 0100100010011110
+
+at 89134760 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1100001011111110, B read address: 1100001011111110
+
+at 93018920 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0011101100101110, B read address: 0011101100101110
+
+at 96916520 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1011010110001110, B read address: 1011010110001110
+
+at 102655400 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0101101110011110, B read address: 0101101110011110
+
+at 104609960 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1001100110111110, B read address: 1001100110111110
+
+at 106553 us(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1101010111111110, B read address: 1101010111111110
+
+at 112391720 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1000110001001110, B read address: 1000110001001110
+
+at 114334760 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1100100010001110, B read address: 1100100010001110
+
+at 116289320 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0000011010101110, B read address: 0000011010101110
+
+at 118130600 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0011001001011110, B read address: 0011001001011110
+
+at 122028200 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1010110010111110, B read address: 1010110010111110
+
+at 129809960 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1001111101001110, B read address: 1001111101001110
+
+at 133707560 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0001100110101110, B read address: 0001100110101110
+
+at 135548840 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0100010101011110, B read address: 0100010101011110
+
+at 139446440 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1011111110111110, B read address: 1011111110111110
+
+at 145285160 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0111011000001110, B read address: 0111011000001110
+
+at 147228200 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1011001001001110, B read address: 1011001001001110
+
+at 151125800 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0010110010101110, B read address: 0010110010101110
+
+at 154921640 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1001011001111110, B read address: 1001011001111110
+
+at 158819240 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0001000011011110, B read address: 0001000011011110
+
+at 162703400 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1000100100001110, B read address: 1000100100001110
+
+at 166601 us(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0000001101101110, B read address: 0000001101101110
+
+at 168442280 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0010111100011110, B read address: 0010111100011110
+
+at 172339880 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1010100101111110, B read address: 1010100101111110
+
+at 176237480 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0010001111011110, B read address: 0010001111011110
+
+at 180121640 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1001110000001110, B read address: 1001110000001110
+
+at 184019240 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0001011001101110, B read address: 0001011001101110
+
+at 187815080 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1000000000111110, B read address: 1000000000111110
+
+at 189758120 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1011110001111110, B read address: 1011110001111110
+
+at 191712680 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1111101010011110, B read address: 1111101010011110
+
+# isim force add /exam1/d 11001100 -radix bin
+# run 160000000ns
+at 193655720 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0011011011011110, B read address: 0011011011011110
+
+at 199494440 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1110110100101110, B read address: 1110110100101110
+
+at 201437480 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0010100101101110, B read address: 0010100101101110
+
+at 205233320 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1001001100111110, B read address: 1001001100111110
+
+at 209130920 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0000110110011110, B read address: 0000110110011110
+
+at 213028520 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1000011111111110, B read address: 1000011111111110
+
+at 216912680 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0000000000101110, B read address: 0000000000101110
+
+at 222651560 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1010011000111110, B read address: 1010011000111110
+
+at 226549160 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0010000010011110, B read address: 0010000010011110
+
+at 230446760 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1001101011111110, B read address: 1001101011111110
+
+at 234330920 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0001001100101110, B read address: 0001001100101110
+
+at 242024360 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1111011101011110, B read address: 1111011101011110
+
+at 243967400 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0011001110011110, B read address: 0011001110011110
+
+at 245921960 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0111000110111110, B read address: 0111000110111110
+
+at 247865 us(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1010110111111110, B read address: 1010110111111110
+
+at 259442600 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0000101001011110, B read address: 0000101001011110
+
+at 263340200 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1000010010111110, B read address: 1000010010111110
+
+at 269079080 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0010101011001110, B read address: 0010101011001110
+
+at 274917800 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1110000100011110, B read address: 1110000100011110
+
+at 276860840 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0001110101011110, B read address: 0001110101011110
+
+at 280758440 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1001011110111110, B read address: 1001011110111110
+
+at 288451880 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0111101111101110, B read address: 0111101111101110
+
+at 292336040 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1111010000011110, B read address: 1111010000011110
+
+at 296233640 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0110111001111110, B read address: 0110111001111110
+
+at 300131240 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1110100011011110, B read address: 1110100011011110
+
+at 305870120 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1000111011101110, B read address: 1000111011101110
+
+at 309754280 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0000011100011110, B read address: 0000011100011110
+
+at 313651880 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1000000101111110, B read address: 1000000101111110
+
+at 317549480 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1111101111011110, B read address: 1111101111011110
+
+at 319390760 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0010011110001110, B read address: 0010011110001110
+
+at 321345320 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0110010110101110, B read address: 0110010110101110
+
+at 323288360 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1010000111101110, B read address: 1010000111101110
+
+at 329127080 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0101100000111110, B read address: 0101100000111110
+
+at 331070120 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1001010001111110, B read address: 1001010001111110
+
+at 333024680 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1101001010011110, B read address: 1101001010011110
+
+at 334967720 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0000111011011110, B read address: 0000111011011110
+
+at 338763560 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0111100010101110, B read address: 0111100010101110
+
+at 346545320 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 0110101100111110, B read address: 0110101100111110
+
+at 350442920 ns(1), Instance /exam1/RAM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: 1110010110011110, B read address: 1110010110011110
+

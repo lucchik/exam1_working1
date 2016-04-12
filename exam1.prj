@@ -1,0 +1,3 @@
+vhdl work "ipcore_dir/dualPort_RAM.vhd"
+vhdl work "ipcore_dir/myClockGenerator.vhd"
+vhdl work "exam1.vhd"

@@ -1,0 +1,2 @@
+vhdl isim_temp "ipcore_dir/dualPort_RAM.vhd"
+vhdl isim_temp "exam1.vhd"

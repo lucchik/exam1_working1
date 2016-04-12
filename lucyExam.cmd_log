@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/ladyo/Documents/Xilinx/exam1/lucyExam.xst" -ofn "C:/Users/ladyo/Documents/Xilinx/exam1/lucyExam.syr" 
